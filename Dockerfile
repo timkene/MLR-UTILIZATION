@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 3000
 
 
-CMD ["python", "MLR.py"]
+CMD ["streamlit", "run", "MLR.py", "--server.port=3000", "--server.address=0.0.0.0"]
